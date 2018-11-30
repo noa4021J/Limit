@@ -7,24 +7,46 @@
 //
 
 import UIKit
+import PGEZTransition
 
 class intro8ViewController: UIViewController {
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let storyboardName = UserDefaults.standard.object(forKey: "storyboard") as! String
+        
+        let animationView = LOTAnimationView(frame: CGRect(x: 0, y: 150, width: 140, height: 140))
+        animationView.center.x = self.view.center.x
+        animationView.setAnimation(named: "check")
+        animationView.loopAnimation = false
+        animationView.animationSpeed = 1
+        
+        if storyboardName == "iphone5-5s-5c-SE" {
+            animationView.frame = CGRect(x: 0, y: 0, width: 140, height: 140)
+            animationView.center.x = self.view.center.x
+            animationView.center.y = self.view.center.y - 100
+        }
+        
+        sleep(3)
+        
+        self.view.addSubview(animationView)
+        animationView.play()
 
-        // Do any additional setup after loading the view.
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func finishedDiagnosis(_ sender: Any) {
+        
+        let firstCheck:Int = 1
+        UserDefaults.standard.set(firstCheck, forKey: "firstCheck")
+        
     }
-    */
-
+    
+    
 }

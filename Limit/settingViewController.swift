@@ -7,24 +7,32 @@
 //
 
 import UIKit
+import Eureka
 
-class settingViewController: UIViewController {
+class settingViewController: FormViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        form +++ Section("設定")
+                <<< SwitchRow("notificationSwitch"){ row in
+                    row.title = "通知設定"
+                    row.value = UserDefaults.standard.bool(forKey: "notificationsSwitch")
+                    }.onChange({ row in
+                        UserDefaults.standard.set(row.value!, forKey: "notificationsSwitch")
+                        row.updateCell()
+        })
+        
+        }
+    
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }

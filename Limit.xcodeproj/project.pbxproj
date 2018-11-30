@@ -7,14 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF0A600321836F830072899D /* sexialSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0A600221836F830072899D /* sexialSelectViewController.swift */; };
+		BF0A600521836F930072899D /* ageSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0A600421836F930072899D /* ageSelectViewController.swift */; };
+		BF0A600721836F9F0072899D /* birthdaySelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0A600621836F9F0072899D /* birthdaySelectViewController.swift */; };
+		BF0A600921836FED0072899D /* diagnosisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0A600821836FED0072899D /* diagnosisViewController.swift */; };
+		BF1C929021822B4C007ED5E6 /* settingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1C928F21822B4C007ED5E6 /* settingViewController.swift */; };
+		BF1C929221823215007ED5E6 /* addMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1C929121823215007ED5E6 /* addMessageViewController.swift */; };
+		BF47C72921824DD200488C70 /* messageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF47C72821824DD200488C70 /* messageListViewController.swift */; };
+		BF530B36218AA69100CE6CF9 /* iphone678.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF530B35218AA69100CE6CF9 /* iphone678.storyboard */; };
+		BF530B38218AA6A700CE6CF9 /* iphone678-Plus.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF530B37218AA6A700CE6CF9 /* iphone678-Plus.storyboard */; };
+		BF530B3A218AA6BA00CE6CF9 /* iphoneXR-XSmax.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF530B39218AA6BA00CE6CF9 /* iphoneXR-XSmax.storyboard */; };
+		BF530B3C218AA6CD00CE6CF9 /* iphone5-5s-5c-SE.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF530B3B218AA6CD00CE6CF9 /* iphone5-5s-5c-SE.storyboard */; };
+		BF530B42218AE3ED00CE6CF9 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BF530B41218AE3ED00CE6CF9 /* Settings.bundle */; };
 		BF8EED0821806B94003FA8B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8EED0721806B94003FA8B8 /* AppDelegate.swift */; };
 		BF8EED0A21806B94003FA8B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8EED0921806B94003FA8B8 /* ViewController.swift */; };
 		BF8EED0D21806B94003FA8B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8EED0B21806B94003FA8B8 /* Main.storyboard */; };
 		BF8EED0F21806B96003FA8B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8EED0E21806B96003FA8B8 /* Assets.xcassets */; };
 		BF8EED1221806B96003FA8B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8EED1021806B96003FA8B8 /* LaunchScreen.storyboard */; };
+		BF8EED1A21806DEF003FA8B8 /* heartClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8EED1921806DEF003FA8B8 /* heartClockViewController.swift */; };
+		BFAA77782184B070005AB716 /* intro1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAA77772184B070005AB716 /* intro1ViewController.swift */; };
+		BFAA777A2184B39F005AB716 /* intro2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAA77792184B39F005AB716 /* intro2ViewController.swift */; };
+		BFAA777C2184B3A6005AB716 /* intro3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAA777B2184B3A6005AB716 /* intro3ViewController.swift */; };
+		BFAA77802184B3C7005AB716 /* intro8ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAA777F2184B3C7005AB716 /* intro8ViewController.swift */; };
+		BFAA77892184CCB6005AB716 /* animation.json in Resources */ = {isa = PBXBuildFile; fileRef = BFAA77872184CCB6005AB716 /* animation.json */; };
+		BFAA778A2184CCB6005AB716 /* check.json in Resources */ = {isa = PBXBuildFile; fileRef = BFAA77882184CCB6005AB716 /* check.json */; };
+		FDA020C568F1D64686633271 /* Pods_Limit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B7CE910742E11A289338AAE /* Pods_Limit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B7CE910742E11A289338AAE /* Pods_Limit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Limit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DBB0980D5D34BDBFB5C619E /* Pods-Limit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Limit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Limit/Pods-Limit.debug.xcconfig"; sourceTree = "<group>"; };
+		636B00AF8EE7D035BAD3FF77 /* Pods-Limit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Limit.release.xcconfig"; path = "Pods/Target Support Files/Pods-Limit/Pods-Limit.release.xcconfig"; sourceTree = "<group>"; };
+		BF0A600221836F830072899D /* sexialSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sexialSelectViewController.swift; sourceTree = "<group>"; };
+		BF0A600421836F930072899D /* ageSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ageSelectViewController.swift; sourceTree = "<group>"; };
+		BF0A600621836F9F0072899D /* birthdaySelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = birthdaySelectViewController.swift; sourceTree = "<group>"; };
+		BF0A600821836FED0072899D /* diagnosisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = diagnosisViewController.swift; sourceTree = "<group>"; };
+		BF1C928F21822B4C007ED5E6 /* settingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingViewController.swift; sourceTree = "<group>"; };
+		BF1C929121823215007ED5E6 /* addMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addMessageViewController.swift; sourceTree = "<group>"; };
+		BF47C72821824DD200488C70 /* messageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = messageListViewController.swift; sourceTree = "<group>"; };
+		BF530B35218AA69100CE6CF9 /* iphone678.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = iphone678.storyboard; sourceTree = "<group>"; };
+		BF530B37218AA6A700CE6CF9 /* iphone678-Plus.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "iphone678-Plus.storyboard"; sourceTree = "<group>"; };
+		BF530B39218AA6BA00CE6CF9 /* iphoneXR-XSmax.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "iphoneXR-XSmax.storyboard"; sourceTree = "<group>"; };
+		BF530B3B218AA6CD00CE6CF9 /* iphone5-5s-5c-SE.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "iphone5-5s-5c-SE.storyboard"; sourceTree = "<group>"; };
+		BF530B41218AE3ED00CE6CF9 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		BF8EED0421806B94003FA8B8 /* Limit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Limit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF8EED0721806B94003FA8B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF8EED0921806B94003FA8B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +57,14 @@
 		BF8EED0E21806B96003FA8B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF8EED1121806B96003FA8B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF8EED1321806B96003FA8B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF8EED1921806DEF003FA8B8 /* heartClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = heartClockViewController.swift; sourceTree = "<group>"; };
+		BFAA776C21849D9E005AB716 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		BFAA77772184B070005AB716 /* intro1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intro1ViewController.swift; sourceTree = "<group>"; };
+		BFAA77792184B39F005AB716 /* intro2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intro2ViewController.swift; sourceTree = "<group>"; };
+		BFAA777B2184B3A6005AB716 /* intro3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intro3ViewController.swift; sourceTree = "<group>"; };
+		BFAA777F2184B3C7005AB716 /* intro8ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intro8ViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		BFAA77872184CCB6005AB716 /* animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = animation.json; path = ../../LimitData/JSON/animation.json; sourceTree = "<group>"; };
+		BFAA77882184CCB6005AB716 /* check.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = check.json; path = ../../LimitData/JSON/check.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +72,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDA020C568F1D64686633271 /* Pods_Limit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		845BE1A575A32CA12CB7F936 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DBB0980D5D34BDBFB5C619E /* Pods-Limit.debug.xcconfig */,
+				636B00AF8EE7D035BAD3FF77 /* Pods-Limit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BBB3E12E7530D8B2AC717D09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B7CE910742E11A289338AAE /* Pods_Limit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BF8EECFB21806B94003FA8B8 = {
 			isa = PBXGroup;
 			children = (
+				BFAA776C21849D9E005AB716 /* Bridging-Header.h */,
 				BF8EED0621806B94003FA8B8 /* Limit */,
 				BF8EED0521806B94003FA8B8 /* Products */,
+				845BE1A575A32CA12CB7F936 /* Pods */,
+				BBB3E12E7530D8B2AC717D09 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,11 +119,30 @@
 			isa = PBXGroup;
 			children = (
 				BF8EED0721806B94003FA8B8 /* AppDelegate.swift */,
+				BFAA77872184CCB6005AB716 /* animation.json */,
+				BFAA77882184CCB6005AB716 /* check.json */,
 				BF8EED0921806B94003FA8B8 /* ViewController.swift */,
 				BF8EED0B21806B94003FA8B8 /* Main.storyboard */,
+				BF530B41218AE3ED00CE6CF9 /* Settings.bundle */,
+				BFAA77772184B070005AB716 /* intro1ViewController.swift */,
+				BFAA77792184B39F005AB716 /* intro2ViewController.swift */,
+				BFAA777B2184B3A6005AB716 /* intro3ViewController.swift */,
+				BF0A600221836F830072899D /* sexialSelectViewController.swift */,
+				BF0A600621836F9F0072899D /* birthdaySelectViewController.swift */,
+				BF0A600421836F930072899D /* ageSelectViewController.swift */,
+				BF0A600821836FED0072899D /* diagnosisViewController.swift */,
+				BFAA777F2184B3C7005AB716 /* intro8ViewController.swift */,
+				BF8EED1921806DEF003FA8B8 /* heartClockViewController.swift */,
+				BF1C928F21822B4C007ED5E6 /* settingViewController.swift */,
+				BF1C929121823215007ED5E6 /* addMessageViewController.swift */,
+				BF47C72821824DD200488C70 /* messageListViewController.swift */,
 				BF8EED0E21806B96003FA8B8 /* Assets.xcassets */,
 				BF8EED1021806B96003FA8B8 /* LaunchScreen.storyboard */,
 				BF8EED1321806B96003FA8B8 /* Info.plist */,
+				BF530B35218AA69100CE6CF9 /* iphone678.storyboard */,
+				BF530B37218AA6A700CE6CF9 /* iphone678-Plus.storyboard */,
+				BF530B39218AA6BA00CE6CF9 /* iphoneXR-XSmax.storyboard */,
+				BF530B3B218AA6CD00CE6CF9 /* iphone5-5s-5c-SE.storyboard */,
 			);
 			path = Limit;
 			sourceTree = "<group>";
@@ -71,9 +154,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF8EED1621806B96003FA8B8 /* Build configuration list for PBXNativeTarget "Limit" */;
 			buildPhases = (
+				94978F1DB2AACE062FF8925F /* [CP] Check Pods Manifest.lock */,
 				BF8EED0021806B94003FA8B8 /* Sources */,
 				BF8EED0121806B94003FA8B8 /* Frameworks */,
 				BF8EED0221806B94003FA8B8 /* Resources */,
+				2667FFC1D93E3335CB190020 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,20 +208,86 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF8EED1221806B96003FA8B8 /* LaunchScreen.storyboard in Resources */,
+				BF530B3A218AA6BA00CE6CF9 /* iphoneXR-XSmax.storyboard in Resources */,
+				BF530B42218AE3ED00CE6CF9 /* Settings.bundle in Resources */,
 				BF8EED0F21806B96003FA8B8 /* Assets.xcassets in Resources */,
+				BF530B38218AA6A700CE6CF9 /* iphone678-Plus.storyboard in Resources */,
+				BFAA778A2184CCB6005AB716 /* check.json in Resources */,
+				BF530B36218AA69100CE6CF9 /* iphone678.storyboard in Resources */,
+				BF530B3C218AA6CD00CE6CF9 /* iphone5-5s-5c-SE.storyboard in Resources */,
+				BFAA77892184CCB6005AB716 /* animation.json in Resources */,
 				BF8EED0D21806B94003FA8B8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2667FFC1D93E3335CB190020 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Limit/Pods-Limit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+				"${BUILT_PRODUCTS_DIR}/HeartLoadingView/HeartLoadingView.framework",
+				"${BUILT_PRODUCTS_DIR}/JTMaterialTransition/JTMaterialTransition.framework",
+				"${BUILT_PRODUCTS_DIR}/PGEZTransition/PGEZTransition.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HeartLoadingView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTMaterialTransition.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PGEZTransition.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Limit/Pods-Limit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94978F1DB2AACE062FF8925F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Limit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BF8EED0021806B94003FA8B8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF8EED1A21806DEF003FA8B8 /* heartClockViewController.swift in Sources */,
 				BF8EED0A21806B94003FA8B8 /* ViewController.swift in Sources */,
 				BF8EED0821806B94003FA8B8 /* AppDelegate.swift in Sources */,
+				BF0A600321836F830072899D /* sexialSelectViewController.swift in Sources */,
+				BFAA77802184B3C7005AB716 /* intro8ViewController.swift in Sources */,
+				BF0A600921836FED0072899D /* diagnosisViewController.swift in Sources */,
+				BF0A600521836F930072899D /* ageSelectViewController.swift in Sources */,
+				BF1C929221823215007ED5E6 /* addMessageViewController.swift in Sources */,
+				BFAA777C2184B3A6005AB716 /* intro3ViewController.swift in Sources */,
+				BFAA77782184B070005AB716 /* intro1ViewController.swift in Sources */,
+				BF0A600721836F9F0072899D /* birthdaySelectViewController.swift in Sources */,
+				BF47C72921824DD200488C70 /* messageListViewController.swift in Sources */,
+				BFAA777A2184B39F005AB716 /* intro2ViewController.swift in Sources */,
+				BF1C929021822B4C007ED5E6 /* settingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,7 +345,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Syunsuke Nakao (MA457A3LUC)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -255,7 +406,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Syunsuke Nakao (MA457A3LUC)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -280,8 +431,10 @@
 		};
 		BF8EED1721806B96003FA8B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DBB0980D5D34BDBFB5C619E /* Pods-Limit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MA457A3LUC;
 				INFOPLIST_FILE = Limit/Info.plist;
@@ -289,17 +442,21 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lifech.Limit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mani.Limit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PRODUCT)/Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		BF8EED1821806B96003FA8B8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 636B00AF8EE7D035BAD3FF77 /* Pods-Limit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MA457A3LUC;
 				INFOPLIST_FILE = Limit/Info.plist;
@@ -307,10 +464,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lifech.Limit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mani.Limit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PRODUCT)/Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
