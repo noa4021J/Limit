@@ -125,6 +125,10 @@
 				BF8EED0B21806B94003FA8B8 /* Main.storyboard */,
 				BF530B41218AE3ED00CE6CF9 /* Settings.bundle */,
 				BFAA77772184B070005AB716 /* intro1ViewController.swift */,
+				BFC216FD228145D00050DF2C /* View */,
+				BFC216FE228145D80050DF2C /* ViewModel */,
+				BFC216FF228145FC0050DF2C /* Controller */,
+				BFC216FC228145BA0050DF2C /* Model */,
 				BFAA77792184B39F005AB716 /* intro2ViewController.swift */,
 				BFAA777B2184B3A6005AB716 /* intro3ViewController.swift */,
 				BF0A600221836F830072899D /* sexialSelectViewController.swift */,
@@ -145,6 +149,34 @@
 				BF530B3B218AA6CD00CE6CF9 /* iphone5-5s-5c-SE.storyboard */,
 			);
 			path = Limit;
+			sourceTree = "<group>";
+		};
+		BFC216FC228145BA0050DF2C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BFC216FD228145D00050DF2C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BFC216FE228145D80050DF2C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BFC216FF228145FC0050DF2C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
