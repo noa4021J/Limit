@@ -1,32 +1,16 @@
 PODS:
-  - Eureka (4.3.0)
-  - HeartLoadingView (0.2.0)
-  - JTMaterialTransition (2.0.1)
-  - lottie-ios (2.5.2)
-  - PGEZTransition (0.1.0)
+  - WaveAnimationView (1.0.1)
 
 DEPENDENCIES:
-  - Eureka
-  - HeartLoadingView
-  - JTMaterialTransition (~> 2.0)
-  - lottie-ios
-  - PGEZTransition
+  - WaveAnimationView
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - Eureka
-    - HeartLoadingView
-    - JTMaterialTransition
-    - lottie-ios
-    - PGEZTransition
+    - WaveAnimationView
 
 SPEC CHECKSUMS:
-  Eureka: 6d711cb30ca333b4bc893110285a722ae3840114
-  HeartLoadingView: ae08da877ff4b39e10388595854788968ba36ba8
-  JTMaterialTransition: 2350b44b404d1982a7ba755866cc65da452f4eec
-  lottie-ios: 3fef45d3fabe63e3c7c2eb603dd64ddfffc73062
-  PGEZTransition: fb320456e2221b09ea233906e13d18c6f8803209
+  WaveAnimationView: 5dd00138cea2c7a1307d99771ba5c7801671be3e
 
-PODFILE CHECKSUM: 07788e2fc299d9c43bfb9717f032d377993af426
+PODFILE CHECKSUM: 56d7fa9085dc309b328652470c1e6c9c86c3dcde
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1

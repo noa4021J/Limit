@@ -13,57 +13,23 @@ import UserNotifications
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
-    func grabStoryboard() -> UIStoryboard {
-        
-        var storyboard = UIStoryboard()
-        var storyboardName:String!
-        let height = UIScreen.main.bounds.size.height
-        
-        switch height {
-        case 568: //iPhone5-5s-5c-SE
-            storyboardName = "iphone5-5s-5c-SE"
-            storyboard = UIStoryboard(name: storyboardName, bundle: nil)
-        case 667: //iPhone6-7-8
-            storyboardName = "iphone678"
-            storyboard = UIStoryboard(name: storyboardName, bundle: nil)
-        case 736: //iPhone6-7-8-Plus
-            storyboardName = "iphone678-Plus"
-            storyboard = UIStoryboard(name: storyboardName, bundle: nil)
-        case 812: //iPhoneX-XS
-            storyboardName = "Main"
-            storyboard = UIStoryboard(name: storyboardName, bundle: nil)
-        case 896: //iPhoneXR-XSmax
-            storyboardName = "iphoneXR-XSmax"
-            storyboard = UIStoryboard(name: storyboardName, bundle: nil)
-        default:
-            break
-        }
-        
-        UserDefaults.standard.set(storyboardName, forKey: "storyboard")
-        
-        return storyboard
-    }
+
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
         sleep(2)
         
-        if UserDefaults.standard.object(forKey: "firstCheck") == nil {
-            
-            let storybord: UIStoryboard = self.grabStoryboard()
+        let storybord = UIStoryboard(name: "Main", bundle: nil)
+        
+        if UserDefaults.standard.bool(forKey: "diagnosis_finished") {
             window = UIWindow(frame: UIScreen.main.bounds)
-            window!.rootViewController = storybord.instantiateViewController(withIdentifier: "firstView")
+            window!.rootViewController = storybord.instantiateViewController(withIdentifier: "clockView")
             window!.makeKeyAndVisible()
-            
         } else {
-            
-            let storybord: UIStoryboard = self.grabStoryboard()
             window = UIWindow(frame: UIScreen.main.bounds)
             window!.rootViewController = storybord.instantiateViewController(withIdentifier: "rootView")
             window!.makeKeyAndVisible()
-            
         }
         
         return true

@@ -27,7 +27,6 @@ class intro1ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.transitionSetUp()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -37,29 +36,8 @@ class intro1ViewController: UIViewController {
     
     
     @IBAction func next(_ sender: Any) {
-        self.transition.presentTransformViewController()
+       
     }
     
 
-}
-
-extension intro1ViewController {
-    
-    func transitionSetUp() {
-        
-        self.transition = PGTransformTransition.init(target: self, presenting: self.nextVC)
-        
-        transformView
-            .setStartAlpha(0.0, start: 0.0, duration: 1.0)
-            .setEndAlpha(0.0, start: 0.0, duration: 1.0)
-        
-        title1
-            .setStartTransform(.rateX(0.3), start: 0.0, duration: 1.0)
-            .setStartAlpha(0.0, start: 0.0, duration: 1.0)
-            .setEndTransform(.zero, start: 0.0, duration: 1.0)
-            .setEndAlpha(1.0, start: 0.0, duration: 0.3)
-
-        
-    }
-    
 }
