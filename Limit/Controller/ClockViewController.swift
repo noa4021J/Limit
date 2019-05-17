@@ -22,7 +22,9 @@ class ClockViewController: UIViewController {
     
     @IBOutlet weak var progressLabel: UILabel!
     
+    
     private var waveView: WaveAnimationView!
+    private var progress:Int = 0
     
     private let counter = LifeSpanCounter()
     
@@ -50,6 +52,7 @@ class ClockViewController: UIViewController {
                 self.secondLabel.text = String(data["limitSecond"] as! Int)
                 self.waveView.setProgress(to:  data["percentage"] as! Float)
                 self.progressLabel.text = "\(Int(data["percentage"] as! Float*100))%"
+                self.progress = Int(data["percentage"] as! Float*100)
                 
             })
         }
@@ -57,7 +60,7 @@ class ClockViewController: UIViewController {
     }
     
     @IBAction func share(_ sender: UIButton) {
-        pushActivityVC(progress: Int(self.waveView.progress))
+        pushActivityVC(progress: Int(self.progress))
     }
     
     private func setupClockView() {

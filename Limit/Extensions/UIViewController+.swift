@@ -32,30 +32,28 @@ extension UIViewController {
     
     public func pushActivityVC(progress: Int) {
         
-        let sharedText = "あなたの残りの人生は「\(progress)%」です。- ハート形人生時計アプリ「Limit」"
-        let sharedUrl = URL(string: "https://itunes.apple.com/jp/app/limit/id1441079872?mt=8")!
-        let sharedImage = UIImage.pngData(self.getScreenShot())
+        let url = URL(string: "https://apple.co/2HCuWCa")
+        let sharedText = "あなたの残りの人生は「\(progress)%」です。|  ハート形人生時計アプリ「Limit」- \(url!)"
+        let sharedImage = self.getScreenShot()
         
-        let items:[Any] = [sharedText, sharedUrl, sharedImage]
+        let items:[Any] = [sharedText, sharedImage]
         
         let activityVC = UIActivityViewController(activityItems: items, applicationActivities: nil)
         
+        print(sharedImage)
         self.present(activityVC, animated: true, completion: nil)
     }
     
     private func getScreenShot() -> UIImage {
+
+        let captureSize = self.view.bounds.size
         
-        let width:CGFloat = UIScreen.main.bounds.width
-        let height:CGFloat = 100.0
-        
-        let captureSize = CGSize(width: width, height: height)
-        
-        UIGraphicsBeginImageContext(captureSize)
-        let context = UIGraphicsGetCurrentContext()!
+        UIGraphicsBeginImageContextWithOptions(captureSize, false, 0.0)
+        let context:CGContext = UIGraphicsGetCurrentContext()!
         
         self.view.layer.render(in: context)
         
-        let captureImage = UIGraphicsGetImageFromCurrentImageContext()!
+        let captureImage:UIImage = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return captureImage

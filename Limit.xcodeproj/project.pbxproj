@@ -25,6 +25,7 @@
 		BFD68376228AC2190001A7E5 /* DiagnosisViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD68375228AC2190001A7E5 /* DiagnosisViewControllers.swift */; };
 		BFD68378228ACC780001A7E5 /* UserInfoDataSouce.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD68377228ACC780001A7E5 /* UserInfoDataSouce.swift */; };
 		BFD6837A228ACC7F0001A7E5 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD68379228ACC7F0001A7E5 /* UserInfo.swift */; };
+		BFE65FEA228E6E5100DD5DB7 /* CustomPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE65FE9228E6E5100DD5DB7 /* CustomPresentationController.swift */; };
 		BFE858C0228D8C4500290916 /* BigJohnPRO-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BFE858BF228D8C3400290916 /* BigJohnPRO-Regular.otf */; };
 		BFE858C2228D96D000290916 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE858C1228D96D000290916 /* UIView+.swift */; };
 		BFE858CD228D9DF400290916 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE858CC228D9DF400290916 /* UIViewController+.swift */; };
@@ -55,6 +56,7 @@
 		BFD68375228AC2190001A7E5 /* DiagnosisViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosisViewControllers.swift; sourceTree = "<group>"; };
 		BFD68377228ACC780001A7E5 /* UserInfoDataSouce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoDataSouce.swift; sourceTree = "<group>"; };
 		BFD68379228ACC7F0001A7E5 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		BFE65FE9228E6E5100DD5DB7 /* CustomPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomPresentationController.swift; path = /Users/aion/Desktop/Limit_all/Limit/Limit/Controller/CustomPresentationController.swift; sourceTree = "<absolute>"; };
 		BFE858BF228D8C3400290916 /* BigJohnPRO-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BigJohnPRO-Regular.otf"; sourceTree = "<group>"; };
 		BFE858C1228D96D000290916 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		BFE858CC228D9DF400290916 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIViewController+.swift"; path = "Limit/Extensions/UIViewController+.swift"; sourceTree = SOURCE_ROOT; };
@@ -166,6 +168,7 @@
 		BFE858C3228D9C0800290916 /* CustomUI */ = {
 			isa = PBXGroup;
 			children = (
+				BFE65FE9228E6E5100DD5DB7 /* CustomPresentationController.swift */,
 				BFD6836F228AB9B70001A7E5 /* FadeTransitionAnimator.swift */,
 				BFD68373228AC1390001A7E5 /* CustomIntroViewController.swift */,
 				BF8510DA228AE74D001D3779 /* CustomDatePicker.swift */,
@@ -309,6 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFE65FEA228E6E5100DD5DB7 /* CustomPresentationController.swift in Sources */,
 				BFD68376228AC2190001A7E5 /* DiagnosisViewControllers.swift in Sources */,
 				BFC2170422814C560050DF2C /* UIColor+.swift in Sources */,
 				BFD6837A228ACC7F0001A7E5 /* UserInfo.swift in Sources */,
