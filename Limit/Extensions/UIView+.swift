@@ -82,4 +82,34 @@ extension UIView {
         }
     }
     
+    
+    func drawSideBorder(borderWidth: CGFloat, borderColor: UIColor, UI: UIView, side: borderSide) -> CALayer {
+        let border = CALayer()
+        
+        border.frame = side.getFrame(UI: UI, borderWidth: borderWidth)
+        border.backgroundColor = borderColor.cgColor
+        return border
+    }
+    
+}
+
+enum borderSide {
+    case top
+    case bottom
+    case left
+    case right
+    
+    func getFrame(UI:UIView, borderWidth: CGFloat) -> CGRect {
+        switch self {
+        case .top:
+            return CGRect(x: 0, y: 0, width: UI.bounds.size.width, height: borderWidth)
+        case .bottom:
+            return CGRect(x: 0, y: UI.bounds.maxY-borderWidth, width: UI.bounds.size.width, height: borderWidth)
+        case .left:
+            return CGRect(x: 0, y: 0, width: borderWidth, height: UI.bounds.size.height)
+        case .right:
+            return CGRect(x: UI.bounds.maxX-borderWidth, y: 0, width: borderWidth, height: UI.bounds.size.height)
+        }
+    }
+    
 }

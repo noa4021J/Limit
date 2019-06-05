@@ -44,4 +44,16 @@ class UserInfoDataSouce {
         completion()
     }
     
+    func resetUserInfo() {
+        
+        if UserDefaults.standard.data(forKey: "UserInfo") == nil,
+            UserDefaults.standard.bool(forKey: "diagnosis_finished") == false {
+            return
+        }
+        
+        UserDefaults.standard.removeObject(forKey: "UserInfo")
+        UserDefaults.standard.set(false, forKey: "diagnosis_finished")
+        
+    }
+    
 }

@@ -22,19 +22,36 @@ class ClockViewController: UIViewController {
     
     @IBOutlet weak var progressLabel: UILabel!
     
-    
-    private var waveView: WaveAnimationView!
-    private var progress:Int = 0
-    
     private let counter = LifeSpanCounter()
     
+    private var waveView: WaveAnimationView!
+    
+    private lazy var setupWaveView: (()->Void)? = {
+        
+        //ViewDidLayoutSubviewsの中で１度だけ実行される
+        self.waveView = self.setupWaveAnimationView(front: UIColor.white.withAlphaComponent(0.5), back: UIColor.white.withAlphaComponent(0.5), frame: CGRect(x: 0, y: 0, width: self.lapView.bounds.size.width, height: self.lapView.bounds.size.height), mask: UIImage(named: "heart"))
+        
+        let layer = self.setupGradientLayer(colors: [UIColor(hexcode: "#88d3ce", alpha: 1).cgColor, UIColor(hexcode: "#6e45e2", alpha: 1).cgColor], frame: self.view.frame)
+        
+        self.view.layer.insertSublayer(layer, at: 0)
+        self.lapView.addSubview(self.waveView)
+        self.waveView.startAnimation()
+        
+        //１度実行された直後にnilを返すため2回目以降は実行されない
+        return nil
+    }()
+    
     deinit {
-        waveView.stopAnimaiton()
+        waveView.stopAnimation()
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupClockView()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        setupWaveView?()
     }
     
     
@@ -50,9 +67,9 @@ class ClockViewController: UIViewController {
                 self.hourLabel.text = String(data["limitHour"] as! Int)
                 self.minuteLabel.text = String(data["limitMinute"] as! Int)
                 self.secondLabel.text = String(data["limitSecond"] as! Int)
-                self.waveView.setProgress(to:  data["percentage"] as! Float)
-                self.progressLabel.text = "\(Int(data["percentage"] as! Float*100))%"
-                self.progress = Int(data["percentage"] as! Float*100)
+                
+                self.waveView.setProgress(Float(data["totalDays"] as! Int)/Float(data["allDays"] as! Int))
+                self.progressLabel.text = "\(Int(self.waveView.progress*100))%"
                 
             })
         }
@@ -60,18 +77,25 @@ class ClockViewController: UIViewController {
     }
     
     @IBAction func share(_ sender: UIButton) {
-        pushActivityVC(progress: Int(self.progress))
+        //なぜか初期値の0.5が出力される
+        shareLifeSpanWithImage(progress: Int(waveView.progress*100))
     }
     
     private func setupClockView() {
-        waveView = setupWaveAnimationView(front: UIColor.white.withAlphaComponent(0.5), back: UIColor.white.withAlphaComponent(0.5), frame: CGRect(x: 0, y: 0, width: lapView.bounds.width, height: lapView.bounds.height), mask: UIImage(named: "heart"))
         
-        let layer = setupGradientLayer(colors: [UIColor(hexcode: "#88d3ce", alpha: 1).cgColor, UIColor(hexcode: "#6e45e2", alpha: 1).cgColor], frame: self.view.frame)
-        
-        self.view.layer.insertSublayer(layer, at: 0)
-        self.lapView.addSubview(waveView)
-        
-        waveView.startAnimation()
     }
+    
+    @IBAction func setting(_ sender: UIBarButtonItem) {
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let settingView: SettingViewController = storyBoard.instantiateViewController(withIdentifier: "setting") as! SettingViewController
+        settingView.modalPresentationStyle = .overFullScreen
+        settingView.modalTransitionStyle = .crossDissolve
+        
+        self.present(settingView, animated: true, completion: nil)
+        
+    }
+    
     
 }

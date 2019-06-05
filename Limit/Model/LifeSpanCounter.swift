@@ -80,8 +80,7 @@ class LifeSpanCounter {
             "allDays":allDaysComponents.day!,
             "limitHour":limitHour,
             "limitMinute":limitMinute,
-            "limitSecond":limitSecond,
-            "percentage":percentage
+            "limitSecond":limitSecond
         ]
         
         update(newValues)

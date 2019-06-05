@@ -20,7 +20,7 @@ extension UIViewController {
         return layer
     }
     
-    public func setupWaveAnimationView(front:UIColor, back: UIColor, frame: CGRect, mask: UIImage?) -> WaveAnimationView {
+    public func setupWaveAnimationView(front: UIColor, back: UIColor, frame: CGRect, mask: UIImage?) -> WaveAnimationView {
         let waveView = WaveAnimationView(frame: frame, frontColor: front, backColor: back)
         waveView.maskImage = mask
         waveView.layer.shadowColor = UIColor.white.cgColor
@@ -30,8 +30,7 @@ extension UIViewController {
         return waveView
     }
     
-    public func pushActivityVC(progress: Int) {
-        
+    public func shareLifeSpanWithImage(progress: Int) {
         let url = URL(string: "https://apple.co/2HCuWCa")
         let sharedText = "あなたの残りの人生は「\(progress)%」です。|  ハート形人生時計アプリ「Limit」- \(url!)"
         let sharedImage = self.getScreenShot()
@@ -39,13 +38,27 @@ extension UIViewController {
         let items:[Any] = [sharedText, sharedImage]
         
         let activityVC = UIActivityViewController(activityItems: items, applicationActivities: nil)
-        
-        print(sharedImage)
         self.present(activityVC, animated: true, completion: nil)
     }
     
+    public func shareLimit() {
+        let url = URL(string: "https://apple.co/2HCuWCa")
+        let sharedText = "ハート形人生時計アプリ「Limit」をシェア！-\(url!)"
+        let items:[Any] = [sharedText]
+        let activityVC = UIActivityViewController(activityItems: items, applicationActivities: nil)
+        self.present(activityVC, animated: true, completion: nil)
+    }
+    
+    public func openAppStore() {
+        let limitUrl = "https://itunes.apple.com/jp/app/limit/id1441079872?mt=8"
+        guard let url = URL(string: limitUrl) else { return }
+        
+        if UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url)
+        }
+    }
+    
     private func getScreenShot() -> UIImage {
-
         let captureSize = self.view.bounds.size
         
         UIGraphicsBeginImageContextWithOptions(captureSize, false, 0.0)
@@ -57,7 +70,6 @@ extension UIViewController {
         UIGraphicsEndImageContext()
         
         return captureImage
-        
     }
     
 }

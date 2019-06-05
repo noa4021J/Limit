@@ -86,8 +86,11 @@ public class WaveAnimationView: UIView {
     }
     
     //0.0 .. 1.0 are avaliable
-    open func setProgress(to point: Float) {
-        self.xAxis = self.height - self.height*CGFloat(min(max(point, 0),1))
+    open func setProgress(_ point: Float) {
+        let setPoint:CGFloat = CGFloat(min(max(point, 0),1))
+        
+        self.progress = Float(setPoint)
+
     }
     
     
@@ -98,7 +101,7 @@ public class WaveAnimationView: UIView {
     
     //MARK: Please be sure to call this method at ViewDidDisAppear or deinit in ViewController.
     //If it isn't called, Memory Leaks occurs by Timer
-    open func stopAnimaiton() {
+    open func stopAnimation() {
         timer.invalidate()
     }
     

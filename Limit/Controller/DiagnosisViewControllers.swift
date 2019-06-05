@@ -147,23 +147,24 @@ class SixthVC: CustomIntroViewController, UITextFieldDelegate {
 }
 
 class SeventhVC: CustomIntroViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.animator.presentFinishHandler = {
+            sleep(3)
+            self.performSegue(withIdentifier: "toFinish", sender: nil)
+        }
+        
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        sleep(3)
-        performSegue(withIdentifier: "toFinish", sender: nil)
-    }
 }
 
 class EighthVC: CustomIntroViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.transitioningDelegate = nil
+        
     }
     
     @IBAction func finishDiagnosis(_ sender: UIButton) {

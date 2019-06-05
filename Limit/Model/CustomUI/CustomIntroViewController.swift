@@ -14,7 +14,7 @@ class CustomIntroViewController: UIViewController, UIViewControllerTransitioning
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         self.transitioningDelegate = self
         
     }
