@@ -561,7 +561,7 @@ DQ
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="245" id="Qvi-Fu-MP6"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVI-aF-uJb">
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVI-aF-uJb" customClass="CustomHighlightButton" customModule="Limit" customModuleProvider="target">
                                 <rect key="frame" x="62.666666666666657" y="617.33333333333337" width="249.99999999999997" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <accessibility key="accessibilityConfiguration">
@@ -661,7 +661,7 @@ DQ
                                             <action selector="cancel:" destination="XfB-Id-v4b" eventType="touchUpInside" id="GUE-f3-J3n"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9s-xs-PgV">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9s-xs-PgV" customClass="CustomHighlightButton" customModule="Limit" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="73" width="300" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="pIb-Ie-b5t"/>
@@ -676,7 +676,7 @@ DQ
                                             <action selector="share:" destination="XfB-Id-v4b" eventType="touchUpInside" id="kLQ-Ea-BPa"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h91-KV-G97">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h91-KV-G97" customClass="CustomHighlightButton" customModule="Limit" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="123" width="300" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="5jF-An-brn"/>
@@ -691,7 +691,7 @@ DQ
                                             <action selector="review:" destination="XfB-Id-v4b" eventType="touchUpInside" id="NaW-Kb-dTr"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDP-Gf-sYR">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDP-Gf-sYR" customClass="CustomHighlightButton" customModule="Limit" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="23" width="300" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="JeY-4n-l2R"/>

@@ -92,7 +92,6 @@ class LifeSpanCounter {
         var date: Int!
         
         if userSex {
-            
             switch userAge {
             case 1...21:
                 date = 81
@@ -112,23 +111,23 @@ class LifeSpanCounter {
                 date = 88
             case 79...81:
                 date = 89
-            case 82,83:
+            case 82, 83:
                 date = 90
-            case 84,85:
+            case 84, 85:
                 date = 91
-            case 86,87:
+            case 86, 87:
                 date = 92
             case 88:
                 date = 93
-            case 89,90:
+            case 89, 90:
                 date = 94
             case 91:
                 date = 95
-            case 92,93:
+            case 92, 93:
                 date = 96
             case 94:
                 date = 97
-            case 95,96:
+            case 95, 96:
                 date = 98
             case 97:
                 date = 99
@@ -140,7 +139,7 @@ class LifeSpanCounter {
                 date = 102
             case 101:
                 date = 103
-            case 102,103:
+            case 102, 103:
                 date = 104
             case 104:
                 date = 105
@@ -167,23 +166,23 @@ class LifeSpanCounter {
                 date = 92
             case 83...85:
                 date = 93
-            case 86,87:
+            case 86, 87:
                 date = 94
-            case 88,89:
+            case 88, 89:
                 date = 95
-            case 90,91:
+            case 90, 91:
                 date = 96
-            case 92,93:
+            case 92, 93:
                 date = 97
             case 94:
                 date = 98
-            case 95,96:
+            case 95, 96:
                 date = 99
             case 97:
                 date = 100
             case 98:
                 date = 101
-            case 99,100:
+            case 99, 100:
                 date = 102
             case 101:
                 date = 103

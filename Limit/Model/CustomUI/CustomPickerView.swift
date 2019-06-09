@@ -8,15 +8,15 @@
 
 import UIKit
 
-typealias didSelectAction = (_ didSelectRow: String, _ row: Int)->Void
+typealias DidSelectAction = (_ didSelectRow: String, _ row: Int)->Void
 
 class CustomPickerView: UIPickerView, UIPickerViewDelegate, UIPickerViewDataSource {
     
     private var dataList: [String]!
     private var pickerTextField: UITextField!
-    private var selectedHandler: (didSelectAction)?
+    private var selectedHandler: (DidSelectAction)?
     
-    init(data: [String],textField: UITextField, selectedHandler: @escaping didSelectAction) {
+    init(data: [String],textField: UITextField, selectedHandler: @escaping DidSelectAction) {
         super.init(frame: CGRect.zero)
         
         self.dataList = data

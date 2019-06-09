@@ -24,11 +24,32 @@ class SettingViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
-        shareButton.layer.addSublayer(shareButton.drawSideBorder(borderWidth: 0.5, borderColor: .lightGray, UI: shareButton, side: .bottom))
+        shareButton.layer.addSublayer(
+            shareButton.drawSideBorder(
+                borderWidth: 0.5,
+                borderColor: .lightGray,
+                view: shareButton,
+                side: .bottom
+            )
+        )
         
-        reviewButton.layer.addSublayer(reviewButton.drawSideBorder(borderWidth: 0.5, borderColor: .lightGray, UI: reviewButton, side: .bottom))
+        reviewButton.layer.addSublayer(
+            reviewButton.drawSideBorder(
+                borderWidth: 0.5,
+                borderColor: .lightGray,
+                view: reviewButton,
+                side: .bottom
+            )
+        )
         
-        resetButton.layer.addSublayer(resetButton.drawSideBorder(borderWidth: 0.5, borderColor: .lightGray, UI: resetButton, side: .bottom))
+        resetButton.layer.addSublayer(
+            resetButton.drawSideBorder(
+                borderWidth: 0.5,
+                borderColor: .lightGray,
+                view: resetButton,
+                side: .bottom
+            )
+        )
         
     }
     
@@ -60,10 +81,7 @@ class SettingViewController: UIViewController {
          self.dismiss(animated: true, completion: nil)
     }
     
-    
     private func resetLifeSpan() {
-        
-        let alert = UIAlertController(title: "寿命を再診断します", message: "現在の寿命をリセットし、再診断を行います。よろしいですか？", preferredStyle: UIAlertController.Style.alert)
         
         let okayButton = UIAlertAction(title: "OK", style: .default) { (action) in
             
@@ -71,19 +89,24 @@ class SettingViewController: UIViewController {
             
             sleep(1)
             
-            let alert = UIAlertController(title: "リセットが完了しました。", message: "アプリを終了し、再起動してください。", preferredStyle: UIAlertController.Style.alert)
+            let alert = self.generateAlertController(
+                title: "リセットが完了しました。",
+                message: "アプリを終了し、再起動してください。",
+                actions: [
+                    UIAlertAction(title: "OK", style: .default, handler: nil)
+                ]
+            )
             
-            let okayButton = UIAlertAction(title: "OK", style: .default, handler: nil)
+            self.present(alert, animated: true, completion: nil)
             
-            alert.addAction(okayButton)
-            
-            self.present(alert, animated: true
-                , completion: nil)
         }
         let cancelButton = UIAlertAction(title: "キャンセル", style: .destructive, handler: nil)
         
-        alert.addAction(cancelButton)
-        alert.addAction(okayButton)
+        let alert = self.generateAlertController(
+            title: "寿命を再診断します",
+            message: "現在の寿命をリセットし、再診断を行います。よろしいですか？",
+            actions: [cancelButton, okayButton]
+        )
         
         present(alert, animated: true, completion: nil)
         

@@ -11,6 +11,7 @@
 		BF380DAB228AF9C400E88BFC /* CustomPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF380DAA228AF9C400E88BFC /* CustomPickerView.swift */; };
 		BF380DAD228BAF7100E88BFC /* LifeSpanCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF380DAC228BAF7100E88BFC /* LifeSpanCounter.swift */; };
 		BF3E963B22A7758000A7F9BD /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3E963A22A7758000A7F9BD /* SettingViewController.swift */; };
+		BF3E963D22A8AC1900A7F9BD /* CustomHighlightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3E963C22A8AC1900A7F9BD /* CustomHighlightButton.swift */; };
 		BF530B42218AE3ED00CE6CF9 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BF530B41218AE3ED00CE6CF9 /* Settings.bundle */; };
 		BF8510DB228AE74D001D3779 /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8510DA228AE74D001D3779 /* CustomDatePicker.swift */; };
 		BF8EED0821806B94003FA8B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8EED0721806B94003FA8B8 /* AppDelegate.swift */; };
@@ -38,6 +39,7 @@
 		BF380DAC228BAF7100E88BFC /* LifeSpanCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeSpanCounter.swift; sourceTree = "<group>"; };
 		BF380DAE228BC5F600E88BFC /* ClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockViewController.swift; sourceTree = "<group>"; };
 		BF3E963A22A7758000A7F9BD /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		BF3E963C22A8AC1900A7F9BD /* CustomHighlightButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHighlightButton.swift; sourceTree = "<group>"; };
 		BF530B41218AE3ED00CE6CF9 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		BF8510DA228AE74D001D3779 /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
 		BF8EED0421806B94003FA8B8 /* Limit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Limit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +165,7 @@
 		BFE858C3228D9C0800290916 /* CustomUI */ = {
 			isa = PBXGroup;
 			children = (
+				BF3E963C22A8AC1900A7F9BD /* CustomHighlightButton.swift */,
 				BFD6836F228AB9B70001A7E5 /* FadeTransitionAnimator.swift */,
 				BFD68373228AC1390001A7E5 /* CustomIntroViewController.swift */,
 				BF8510DA228AE74D001D3779 /* CustomDatePicker.swift */,
@@ -313,6 +316,7 @@
 				BF284BB12290D730002E701E /* ClockViewController.swift in Sources */,
 				BFD6837A228ACC7F0001A7E5 /* UserInfo.swift in Sources */,
 				BFD68378228ACC780001A7E5 /* UserInfoDataSouce.swift in Sources */,
+				BF3E963D22A8AC1900A7F9BD /* CustomHighlightButton.swift in Sources */,
 				BF3E963B22A7758000A7F9BD /* SettingViewController.swift in Sources */,
 				BF8EED0821806B94003FA8B8 /* AppDelegate.swift in Sources */,
 				BFE858CD228D9DF400290916 /* UIViewController+.swift in Sources */,

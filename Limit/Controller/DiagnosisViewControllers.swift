@@ -67,15 +67,20 @@ class FifthVC: CustomIntroViewController, UITextFieldDelegate {
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         
         guard let date = date else {
-            //アラートを出す
-            let alert = UIAlertController(title: "入力されていません。", message: "年齢を入力してください。", preferredStyle: UIAlertController.Style.alert)
-            let okayButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil)
-            alert.addAction(okayButton)
+
+            let alert = generateAlertController(
+                title: "入力されていません。",
+                message: "生年月日を入力してください。",
+                actions: [
+                    UIAlertAction(title: "OK", style: .default, handler: nil)
+                ]
+            )
+            
             present(alert, animated: true, completion: nil)
+            
             return false
         }
         
-        //setBirthday
         dataSouce.setBirthday(date: date)
         
         return true
@@ -115,16 +120,22 @@ class SixthVC: CustomIntroViewController, UITextFieldDelegate {
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        //setAge
+        
         guard let age = age else {
-            //アラートを出す
-            let alert = UIAlertController(title: "入力されていません。", message: "年齢を入力してください。", preferredStyle: UIAlertController.Style.alert)
-            let okayButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil)
-            alert.addAction(okayButton)
+            
+            let alert = generateAlertController(
+                title: "入力されていません。",
+                message: "年齢を入力してください。",
+                actions: [
+                    UIAlertAction(title: "OK", style: .default, handler: nil)
+                ]
+            )
+            
             present(alert, animated: true, completion: nil)
+            
             return false
         }
-        //setAge
+        
         dataSouce.setAge(age: age)
         
         return true
@@ -138,8 +149,8 @@ class SixthVC: CustomIntroViewController, UITextFieldDelegate {
     
     private func makeDataList() -> [String]{
         var list = [Int]()
-        for i in 0..<106 {
-            list.append(i)
+        for list_i in 0..<106 {
+            list.append(list_i)
         }
         return list.map { String($0) }
     }

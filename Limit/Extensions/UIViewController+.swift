@@ -32,7 +32,7 @@ extension UIViewController {
     
     public func shareLifeSpanWithImage(progress: Int) {
         let url = URL(string: "https://apple.co/2HCuWCa")
-        let sharedText = "あなたの残りの人生は「\(progress)%」です。|  ハート形人生時計アプリ「Limit」- \(url!)"
+        let sharedText = "あなたの残りの人生は「\(progress)%」です。|  ハート形人生時計アプリ「Limit」をAppStoreで- \(url!)"
         let sharedImage = self.getScreenShot()
         
         let items:[Any] = [sharedText, sharedImage]
@@ -70,6 +70,21 @@ extension UIViewController {
         UIGraphicsEndImageContext()
         
         return captureImage
+    }
+    
+    public func generateAlertController(title: String, message: String, actions: [UIAlertAction]) -> UIAlertController {
+        
+        let alert = UIAlertController(
+            title: title,
+            message: message,
+            preferredStyle: .alert
+        )
+        
+        for action in actions {
+            alert.addAction(action)
+        }
+        
+        return alert
     }
     
 }

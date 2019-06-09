@@ -6,8 +6,7 @@ target 'Limit' do
   use_frameworks!
 
   # Pods for Limit
-
-pod "WaveAnimationView"
+  pod "WaveAnimationView"
 
 end
 

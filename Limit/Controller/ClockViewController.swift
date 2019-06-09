@@ -29,9 +29,24 @@ class ClockViewController: UIViewController {
     private lazy var setupWaveView: (()->Void)? = {
         
         //ViewDidLayoutSubviewsの中で１度だけ実行される
-        self.waveView = self.setupWaveAnimationView(front: UIColor.white.withAlphaComponent(0.5), back: UIColor.white.withAlphaComponent(0.5), frame: CGRect(x: 0, y: 0, width: self.lapView.bounds.size.width, height: self.lapView.bounds.size.height), mask: UIImage(named: "heart"))
+        self.waveView = self.setupWaveAnimationView(
+            front: UIColor.white.withAlphaComponent(0.5),
+            back: UIColor.white.withAlphaComponent(0.5),
+            frame: CGRect(x: 0,
+                          y: 0,
+                          width: self.lapView.bounds.size.width,
+                          height: self.lapView.bounds.size.height
+            ),
+            mask: UIImage(named: "heart")
+        )
         
-        let layer = self.setupGradientLayer(colors: [UIColor(hexcode: "#88d3ce", alpha: 1).cgColor, UIColor(hexcode: "#6e45e2", alpha: 1).cgColor], frame: self.view.frame)
+        let layer = self.setupGradientLayer(
+            colors: [
+                UIColor(hexcode: "#88d3ce", alpha: 1).cgColor,
+                UIColor(hexcode: "#6e45e2", alpha: 1).cgColor
+            ],
+            frame: self.view.frame
+        )
         
         self.view.layer.insertSublayer(layer, at: 0)
         self.lapView.addSubview(self.waveView)
@@ -61,7 +76,7 @@ class ClockViewController: UIViewController {
         Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { (timer) in
             self.counter.timeUpdater(update: { (data) in
                 
-                self.yearLabel.text = String(data["limitYear"] as! Int)
+                self.yearLabel.text = String(data["limitMonth"] as! Int)
                 self.monthLabel.text = String(data["limitMonth"] as! Int)
                 self.dayLabel.text = String(data["limitDay"] as! Int)
                 self.hourLabel.text = String(data["limitHour"] as! Int)
@@ -81,15 +96,13 @@ class ClockViewController: UIViewController {
         shareLifeSpanWithImage(progress: Int(waveView.progress*100))
     }
     
-    private func setupClockView() {
-        
-    }
-    
     @IBAction func setting(_ sender: UIBarButtonItem) {
         
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let settingView: SettingViewController = storyBoard.instantiateViewController(withIdentifier: "setting") as! SettingViewController
+        let settingView: SettingViewController
+            = storyBoard.instantiateViewController(withIdentifier: "setting") as! SettingViewController
+        
         settingView.modalPresentationStyle = .overFullScreen
         settingView.modalTransitionStyle = .crossDissolve
         

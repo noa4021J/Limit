@@ -9,13 +9,16 @@
 import UIKit
 
 class CustomHighlightButton: UIButton {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    
+    override var isHighlighted: Bool {
+        didSet {
+            switch isHighlighted {
+            case true:
+                backgroundColor = UIColor(hexcode: "#e0e0e0", alpha: 1)
+            case false:
+                backgroundColor = UIColor.white
+            }
+        }
     }
-    */
-
+    
 }
