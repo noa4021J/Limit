@@ -8,9 +8,4 @@ jobs:
       - run:
           name: UI and Unit Test
           command: fastlane test
-  build:
-    docker:
-      - image: circleci/openjdk:8-jdk
-    steps: 
-      - run: echo 'Hello world!'
 
