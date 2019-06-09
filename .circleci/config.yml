@@ -7,7 +7,7 @@ jobs:
     steps:
       - run:
           name: UI and Unit Test
-	  command: fastlane test
+          command: fastlane test
   build:
     docker:
       - image: circleci/openjdk:8-jdk
