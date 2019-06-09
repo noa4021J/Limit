@@ -47,7 +47,7 @@ class UserInfoDataSouce {
     func resetUserInfo() {
         
         if UserDefaults.standard.data(forKey: "UserInfo") == nil,
-            UserDefaults.standard.bool(forKey: "diagnosis_finished") == false {
+            UserDefaults.standard.bool(forKey: "diagnosis_finished") != true {
             return
         }
         

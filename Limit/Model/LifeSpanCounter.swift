@@ -10,7 +10,6 @@ import Foundation
 
 class LifeSpanCounter {
     
-    private var calendar: Calendar!
     private var userInfo: UserInfo!
     
     private var limitDate: Date!
@@ -20,11 +19,7 @@ class LifeSpanCounter {
     init() {
         
         userInfo = UserInfoDataSouce.shared.getUserInfo()
-        
-        calendar = Calendar.current
-        calendar.timeZone = TimeZone(identifier: "Asia/Tokyo")!
-        calendar.locale = Locale(identifier: "ja")
-        
+
         setLimitDate()
         
     }
@@ -69,8 +64,6 @@ class LifeSpanCounter {
         let limitHour = 24 - hour
         let limitMinute = 60 - minute
         let limitSecond = 60 - second
-        
-        let percentage = Float(totalDaysComponents.day!)/Float(allDaysComponents.day!)
         
         let newValues:[String:Any] = [
             "limitYear":dayComponents.year!,
