@@ -1,11 +1,29 @@
-version: 1.3.0
+version: 2
 jobs:
   test:
     macos:
       xcode: "10.2.1"
-    branch: master
     steps:
-      - run:
-          name: UI and Unit Test
-          command: fastlane test
+      - checkout
+      - run: fastlane test
+  deploy:
+    macos:
+      xcode: "10.2.1"
+    steps:
+      - checkout
+      - deploy:
+          name: Deploy
+          command: fastlane deploy
+
+workflows:
+  version: 2
+  test_release:
+    jobs:
+      - test
+      - deploy:
+          requires:
+            test
+          filters:
+            branches:
+              only: release
 

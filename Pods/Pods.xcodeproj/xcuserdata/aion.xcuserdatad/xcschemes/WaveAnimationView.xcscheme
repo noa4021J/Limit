@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0331D38F39936A90E7F3616F2A7BEEB1"
+               BlueprintIdentifier = "6F2FF9F7B72047377FE32D020B91F259"
                BuildableName = "WaveAnimationView.framework"
                BlueprintName = "WaveAnimationView"
                ReferencedContainer = "container:Pods.xcodeproj">

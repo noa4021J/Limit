@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='LimitTests.xctest' tests='3' failures='0'>
+  <testsuite name='LimitUITests.LimitUITests' tests='1' failures='0'>
+    <testcase classname='LimitUITests.LimitUITests' name='testExample' time='6.354'/>
+  </testsuite>
+  <testsuite name='LimitTests.LimitTests' tests='2' failures='0'>
+    <testcase classname='LimitTests.LimitTests' name='testExample' time='0.002'/>
+    <testcase classname='LimitTests.LimitTests' name='testPerformanceExample' time='0.376'/>
+  </testsuite>
+</testsuites>

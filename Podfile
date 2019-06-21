@@ -6,9 +6,15 @@ target 'Limit' do
   use_frameworks!
 
   # Pods for Limit
-  pod "WaveAnimationView"
+  pod 'WaveAnimationView'
+  pod 'SVProgressHUD'
+  pod 'Firebase/Core'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Functions'
 
 end
+
+
 
 post_install do | installer |
   require 'fileutils'
