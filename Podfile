@@ -1,4 +1,5 @@
 # Uncomment the next line to define a global platform for your project
+
 # platform :ios, '8.0'
 
 target 'Limit' do
@@ -13,8 +14,6 @@ target 'Limit' do
   pod 'Firebase/Functions'
 
 end
-
-
 
 post_install do | installer |
   require 'fileutils'

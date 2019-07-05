@@ -12,6 +12,16 @@
 		BF3E963B22A7758000A7F9BD /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3E963A22A7758000A7F9BD /* SettingViewController.swift */; };
 		BF3E963D22A8AC1900A7F9BD /* CustomHighlightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3E963C22A8AC1900A7F9BD /* CustomHighlightButton.swift */; };
 		BF530B42218AE3ED00CE6CF9 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BF530B41218AE3ED00CE6CF9 /* Settings.bundle */; };
+		BF5B0C7922BFAD4B000E6EB7 /* BigJohnPRO-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BF5B0C7822BFAD4B000E6EB7 /* BigJohnPRO-Regular.otf */; };
+		BF5B0C7A22BFAD4B000E6EB7 /* BigJohnPRO-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BF5B0C7822BFAD4B000E6EB7 /* BigJohnPRO-Regular.otf */; };
+		BF5EBFA722BD0951004699E5 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF5EBFA522BD0951004699E5 /* Interface.storyboard */; };
+		BF5EBFA922BD0952004699E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF5EBFA822BD0952004699E5 /* Assets.xcassets */; };
+		BF5EBFB022BD0952004699E5 /* WatchLimit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BF5EBFAF22BD0952004699E5 /* WatchLimit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BF5EBFB522BD0952004699E5 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5EBFB422BD0952004699E5 /* InterfaceController.swift */; };
+		BF5EBFB722BD0952004699E5 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5EBFB622BD0952004699E5 /* ExtensionDelegate.swift */; };
+		BF5EBFB922BD0952004699E5 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5EBFB822BD0952004699E5 /* NotificationController.swift */; };
+		BF5EBFBB22BD0953004699E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF5EBFBA22BD0953004699E5 /* Assets.xcassets */; };
+		BF5EBFC022BD0953004699E5 /* WatchLimit.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BF5EBFA322BD0951004699E5 /* WatchLimit.app */; };
 		BF8510DB228AE74D001D3779 /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8510DA228AE74D001D3779 /* CustomDatePicker.swift */; };
 		BF8EED0821806B94003FA8B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8EED0721806B94003FA8B8 /* AppDelegate.swift */; };
 		BF8EED0D21806B94003FA8B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8EED0B21806B94003FA8B8 /* Main.storyboard */; };
@@ -46,6 +56,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BF5EBFB122BD0952004699E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF8EECFC21806B94003FA8B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF5EBFAE22BD0952004699E5;
+			remoteInfo = "WatchLimit Extension";
+		};
+		BF5EBFBE22BD0953004699E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF8EECFC21806B94003FA8B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF5EBFA222BD0951004699E5;
+			remoteInfo = WatchLimit;
+		};
 		BFB9A61122ACDC76006567D9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BF8EECFC21806B94003FA8B8 /* Project object */;
@@ -70,6 +94,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		BF5EBF9D22BD0871004699E5 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				BF5EBFC022BD0953004699E5 /* WatchLimit.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF5EBFC422BD0953004699E5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BF5EBFB022BD0952004699E5 /* WatchLimit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BFE8F1A722B6454F00B415E0 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -105,6 +151,19 @@
 		BF3E963A22A7758000A7F9BD /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		BF3E963C22A8AC1900A7F9BD /* CustomHighlightButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHighlightButton.swift; sourceTree = "<group>"; };
 		BF530B41218AE3ED00CE6CF9 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		BF5B0C7822BFAD4B000E6EB7 /* BigJohnPRO-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BigJohnPRO-Regular.otf"; sourceTree = "<group>"; };
+		BF5EBF9F22BD089D004699E5 /* WaveAnimationView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WaveAnimationView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF5EBFA322BD0951004699E5 /* WatchLimit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchLimit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF5EBFA622BD0951004699E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		BF5EBFA822BD0952004699E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF5EBFAA22BD0952004699E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF5EBFAF22BD0952004699E5 /* WatchLimit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchLimit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF5EBFB422BD0952004699E5 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		BF5EBFB622BD0952004699E5 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		BF5EBFB822BD0952004699E5 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		BF5EBFBA22BD0953004699E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF5EBFBC22BD0953004699E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF5EBFBD22BD0953004699E5 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		BF8510DA228AE74D001D3779 /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
 		BF8EED0421806B94003FA8B8 /* Limit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Limit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF8EED0721806B94003FA8B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +208,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0116D53B786370FA4596558A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF5EBFAC22BD0952004699E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BF8EED0121806B94003FA8B8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -197,6 +270,7 @@
 		BBB3E12E7530D8B2AC717D09 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BF5EBF9F22BD089D004699E5 /* WaveAnimationView.framework */,
 				BFE8F1D022B874FA00B415E0 /* WaveAnimationView.framework */,
 				BFE8F1CE22B874D500B415E0 /* WaveAnimationView.framework */,
 				BFE8F1AA22B6513300B415E0 /* WaveAnimationView.framework */,
@@ -208,6 +282,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BF5EBFA422BD0951004699E5 /* WatchLimit */ = {
+			isa = PBXGroup;
+			children = (
+				BF5EBFA522BD0951004699E5 /* Interface.storyboard */,
+				BF5B0C7822BFAD4B000E6EB7 /* BigJohnPRO-Regular.otf */,
+				BF5EBFA822BD0952004699E5 /* Assets.xcassets */,
+				BF5EBFAA22BD0952004699E5 /* Info.plist */,
+			);
+			path = WatchLimit;
+			sourceTree = "<group>";
+		};
+		BF5EBFB322BD0952004699E5 /* WatchLimit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BF5EBFB422BD0952004699E5 /* InterfaceController.swift */,
+				BF5EBFB622BD0952004699E5 /* ExtensionDelegate.swift */,
+				BF5EBFB822BD0952004699E5 /* NotificationController.swift */,
+				BF5EBFBA22BD0953004699E5 /* Assets.xcassets */,
+				BF5EBFBC22BD0953004699E5 /* Info.plist */,
+				BF5EBFBD22BD0953004699E5 /* PushNotificationPayload.apns */,
+			);
+			path = "WatchLimit Extension";
+			sourceTree = "<group>";
+		};
 		BF8EECFB21806B94003FA8B8 = {
 			isa = PBXGroup;
 			children = (
@@ -215,6 +313,8 @@
 				BFB9A60D22ACDC76006567D9 /* LimitUITests */,
 				BFB9A61B22ACDC82006567D9 /* LimitTests */,
 				BFE8F1B422B6595D00B415E0 /* SharedLifeSpan */,
+				BF5EBFA422BD0951004699E5 /* WatchLimit */,
+				BF5EBFB322BD0952004699E5 /* WatchLimit Extension */,
 				BF8EED0521806B94003FA8B8 /* Products */,
 				845BE1A575A32CA12CB7F936 /* Pods */,
 				BBB3E12E7530D8B2AC717D09 /* Frameworks */,
@@ -228,6 +328,8 @@
 				BFB9A60C22ACDC76006567D9 /* LimitUITests.xctest */,
 				BFB9A61A22ACDC82006567D9 /* LimitTests.xctest */,
 				BFE8F1B322B6595D00B415E0 /* SharedLifeSpan.framework */,
+				BF5EBFA322BD0951004699E5 /* WatchLimit.app */,
+				BF5EBFAF22BD0952004699E5 /* WatchLimit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -360,6 +462,41 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		BF5EBFA222BD0951004699E5 /* WatchLimit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF5EBFC522BD0953004699E5 /* Build configuration list for PBXNativeTarget "WatchLimit" */;
+			buildPhases = (
+				BF5EBFA122BD0951004699E5 /* Resources */,
+				BF5EBFC422BD0953004699E5 /* Embed App Extensions */,
+				0116D53B786370FA4596558A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF5EBFB222BD0952004699E5 /* PBXTargetDependency */,
+			);
+			name = WatchLimit;
+			productName = WatchLimit;
+			productReference = BF5EBFA322BD0951004699E5 /* WatchLimit.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		BF5EBFAE22BD0952004699E5 /* WatchLimit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF5EBFC122BD0953004699E5 /* Build configuration list for PBXNativeTarget "WatchLimit Extension" */;
+			buildPhases = (
+				BF5EBFAB22BD0952004699E5 /* Sources */,
+				BF5EBFAC22BD0952004699E5 /* Frameworks */,
+				BF5EBFAD22BD0952004699E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchLimit Extension";
+			productName = "WatchLimit Extension";
+			productReference = BF5EBFAF22BD0952004699E5 /* WatchLimit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		BF8EED0321806B94003FA8B8 /* Limit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF8EED1621806B96003FA8B8 /* Build configuration list for PBXNativeTarget "Limit" */;
@@ -371,11 +508,13 @@
 				0E1403BD2A4DF3F90DB0AD3E /* [CP] Embed Pods Frameworks */,
 				BFE8F1A722B6454F00B415E0 /* Embed App Extensions */,
 				BFE8F1BF22B6595D00B415E0 /* Embed Frameworks */,
+				BF5EBF9D22BD0871004699E5 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				BFE8F1B922B6595D00B415E0 /* PBXTargetDependency */,
+				BF5EBFBF22BD0953004699E5 /* PBXTargetDependency */,
 			);
 			name = Limit;
 			productName = Limit;
@@ -446,6 +585,12 @@
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Syunsuke Nakao";
 				TargetAttributes = {
+					BF5EBFA222BD0951004699E5 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					BF5EBFAE22BD0952004699E5 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
 					BF8EED0321806B94003FA8B8 = {
 						CreatedOnToolsVersion = 10.0;
 						SystemCapabilities = {
@@ -484,11 +629,32 @@
 				BFB9A60B22ACDC76006567D9 /* LimitUITests */,
 				BFB9A61922ACDC82006567D9 /* LimitTests */,
 				BFE8F1B222B6595D00B415E0 /* SharedLifeSpan */,
+				BF5EBFA222BD0951004699E5 /* WatchLimit */,
+				BF5EBFAE22BD0952004699E5 /* WatchLimit Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BF5EBFA122BD0951004699E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF5EBFA922BD0952004699E5 /* Assets.xcassets in Resources */,
+				BF5EBFA722BD0951004699E5 /* Interface.storyboard in Resources */,
+				BF5B0C7922BFAD4B000E6EB7 /* BigJohnPRO-Regular.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF5EBFAD22BD0952004699E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF5B0C7A22BFAD4B000E6EB7 /* BigJohnPRO-Regular.otf in Resources */,
+				BF5EBFBB22BD0953004699E5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BF8EED0221806B94003FA8B8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -577,6 +743,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BF5EBFAB22BD0952004699E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF5EBFB922BD0952004699E5 /* NotificationController.swift in Sources */,
+				BF5EBFB722BD0952004699E5 /* ExtensionDelegate.swift in Sources */,
+				BF5EBFB522BD0952004699E5 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BF8EED0021806B94003FA8B8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -633,6 +809,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		BF5EBFB222BD0952004699E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF5EBFAE22BD0952004699E5 /* WatchLimit Extension */;
+			targetProxy = BF5EBFB122BD0952004699E5 /* PBXContainerItemProxy */;
+		};
+		BF5EBFBF22BD0953004699E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF5EBFA222BD0951004699E5 /* WatchLimit */;
+			targetProxy = BF5EBFBE22BD0953004699E5 /* PBXContainerItemProxy */;
+		};
 		BFB9A61222ACDC76006567D9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BF8EED0321806B94003FA8B8 /* Limit */;
@@ -651,6 +837,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		BF5EBFA522BD0951004699E5 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF5EBFA622BD0951004699E5 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		BF8EED0B21806B94003FA8B8 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -670,6 +864,94 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		BF5EBFC222BD0953004699E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MA457A3LUC;
+				INFOPLIST_FILE = "WatchLimit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mani.Limit.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Debug;
+		};
+		BF5EBFC322BD0953004699E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MA457A3LUC;
+				INFOPLIST_FILE = "WatchLimit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mani.Limit.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Release;
+		};
+		BF5EBFC622BD0953004699E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MA457A3LUC;
+				IBSC_MODULE = WatchLimit_Extension;
+				INFOPLIST_FILE = WatchLimit/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mani.Limit.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Debug;
+		};
+		BF5EBFC722BD0953004699E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MA457A3LUC;
+				IBSC_MODULE = WatchLimit_Extension;
+				INFOPLIST_FILE = WatchLimit/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mani.Limit.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Release;
+		};
 		BF8EED1421806B96003FA8B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -981,6 +1263,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BF5EBFC122BD0953004699E5 /* Build configuration list for PBXNativeTarget "WatchLimit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF5EBFC222BD0953004699E5 /* Debug */,
+				BF5EBFC322BD0953004699E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF5EBFC522BD0953004699E5 /* Build configuration list for PBXNativeTarget "WatchLimit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF5EBFC622BD0953004699E5 /* Debug */,
+				BF5EBFC722BD0953004699E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BF8EECFF21806B94003FA8B8 /* Build configuration list for PBXProject "Limit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
