@@ -85,6 +85,8 @@ class ClockViewController: UIViewController {
                 self.waveView.setProgress(Float(data["totalDays"] as! Int)/Float(data["allDays"] as! Int))
                 self.progressLabel.text = "\(Int(self.waveView.progress*100))%"
                 
+                self.title = "残り\(data["totalDays"] as! Int)日"
+                
             })
         }
         

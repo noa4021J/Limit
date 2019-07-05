@@ -29,7 +29,7 @@ class ContactViewController: UITableViewController, UITextViewDelegate {
     private func setupUIs() {
         
         // SubmitButton
-        let layer = self.setupGradientLayer(colorThemeType: ColorThemeSource.currentTheme, size: submitButton.bounds.size)
+        let layer = self.setupGradientLayer(colorThemeType: ColorTheme.NearMoon, size: submitButton.bounds.size)
         layer.cornerRadius = submitButton.bounds.midY
         submitButton.layer.insertSublayer(layer, at: 0)
         
