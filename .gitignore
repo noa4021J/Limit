@@ -11,11 +11,29 @@ firebase-debug.log*
 
 # Firebase
 GoogleService-info.plist
+firebase.json
+functions/
+public/
 
 # Firebase cache
 .firebase/
 
 # Firebase config
+
+# Fastlane
+fastlane/
+
+# SonarScanner
+sonar-project.properties
+
+# Gemfile
+Gemfile
+Gemfile.lock
+vendor/
+
+# Fonts
+SmartFontUI.otf
+BigJohnPRO-Regular.otf
 
 # Uncomment this if you'd like others to create their own Firebase project.
 # For a team working on the same Firebase project(s), it is recommended to leave
