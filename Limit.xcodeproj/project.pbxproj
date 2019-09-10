@@ -114,8 +114,8 @@
 		BF8EED1121806B96003FA8B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF8EED1321806B96003FA8B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFB77760232674780068AF51 /* ProgressLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressLabel.swift; sourceTree = "<group>"; };
-		BFB777622326842A0068AF51 /* SmartFontUI.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SmartFontUI.otf; sourceTree = "<group>"; };
-		BFB77763232684370068AF51 /* BigJohnPRO-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BigJohnPRO-Regular.otf"; sourceTree = "<group>"; };
+		BFB777622326842A0068AF51 /* SmartFontUI.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SmartFontUI.otf; path = Resources/Fonts/SmartFontUI.otf; sourceTree = "<group>"; };
+		BFB77763232684370068AF51 /* BigJohnPRO-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "BigJohnPRO-Regular.otf"; path = "Resources/Fonts/BigJohnPRO-Regular.otf"; sourceTree = "<group>"; };
 		BFB777662326B4990068AF51 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BFB9A60C22ACDC76006567D9 /* LimitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LimitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB9A60E22ACDC76006567D9 /* LimitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitUITests.swift; sourceTree = "<group>"; };
