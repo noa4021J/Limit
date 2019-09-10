@@ -8,7 +8,6 @@
 
 import UIKit
 import WaveAnimationView
-import SharedLifeSpan
 
 class ClockViewController: UIViewController {
     
@@ -21,7 +20,7 @@ class ClockViewController: UIViewController {
     
     @IBOutlet weak var lapView: UIView!
     
-    @IBOutlet weak var progressLabel: UILabel!
+    @IBOutlet weak var progressLabel: ProgressLabel!
     
     private let counter = LifeSpanCounter()
     private let colorThemeSource = ColorThemeSource()
@@ -83,7 +82,7 @@ class ClockViewController: UIViewController {
                 self.secondLabel.text = String(data["limitSecond"] as! Int)
                 
                 self.waveView.setProgress(Float(data["totalDays"] as! Int)/Float(data["allDays"] as! Int))
-                self.progressLabel.text = "\(Int(self.waveView.progress*100))%"
+                self.progressLabel.text = String(format: "%.2f", self.waveView.progress*100)+"%"
                 
                 self.title = "残り\(data["totalDays"] as! Int)日"
                 

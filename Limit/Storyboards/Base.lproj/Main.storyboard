@@ -13,6 +13,9 @@
         <array key="BigJohnPRO-Regular.otf">
             <string>BigJohnPRO-Regular</string>
         </array>
+        <array key="SmartFontUI.otf">
+            <string>03SmartFontUI</string>
+        </array>
     </customFonts>
     <scenes>
         <!--FirstVC-->
@@ -23,10 +26,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ようこそ、Limitへ。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZY-Lq-LUI" customClass="PGTransformLabel" customModule="PGEZTransition">
-                                <rect key="frame" x="94" y="396" width="187" height="20"/>
-                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="20"/>
-                                <color key="textColor" red="0.29019607843137252" green="0.33333333333333331" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZY-Lq-LUI" customClass="PGTransformLabel" customModule="PGEZTransition">
+                                <rect key="frame" x="107.66666666666667" y="397" width="159.66666666666663" height="18.333333333333314"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="ようこそ、Limitへ。">
+                                        <attributes>
+                                            <color key="NSColor" red="0.29019607843137252" green="0.33333333333333331" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="17" name="03SmartFontUI"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2X-Xy-fFp" customClass="PGTransformButton" customModule="PGEZTransition">
@@ -44,8 +53,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="g2X-Xy-fFp" firstAttribute="centerX" secondItem="Z0m-6d-JCr" secondAttribute="centerX" id="BIy-HU-yS5"/>
+                            <constraint firstItem="kZY-Lq-LUI" firstAttribute="centerY" secondItem="Z0m-6d-JCr" secondAttribute="centerY" id="QmW-BK-xbB"/>
                             <constraint firstItem="g2X-Xy-fFp" firstAttribute="centerY" secondItem="Z0m-6d-JCr" secondAttribute="centerY" constant="170" id="XIf-N4-K0a"/>
-                            <constraint firstItem="kZY-Lq-LUI" firstAttribute="centerX" secondItem="Z0m-6d-JCr" secondAttribute="centerX" id="pfS-mO-Q6A"/>
+                            <constraint firstItem="kZY-Lq-LUI" firstAttribute="centerX" secondItem="Z0m-6d-JCr" secondAttribute="centerX" id="Xzn-EA-7zG"/>
                             <constraint firstItem="kZY-Lq-LUI" firstAttribute="centerY" secondItem="Z0m-6d-JCr" secondAttribute="centerY" id="ygH-33-tMR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ejv-W4-Uwl"/>
@@ -64,7 +74,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Az-Yn-Kf6" customClass="PGTransformLabel" customModule="PGEZTransition">
-                                <rect key="frame" x="56.666666666666657" y="346" width="262" height="120"/>
+                                <rect key="frame" x="47.666666666666657" y="340.66666666666669" width="280" height="131"/>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content" base64-UTF8="YES">
@@ -74,7 +84,7 @@ meOCi+OCouODl+ODquOBp+OBmeOAgg
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.29019607843137252" green="0.33333333333333331" blue="0.42352941176470588" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="20" name=".HiraKakuInterface-W3"/>
+                                            <font key="NSFont" size="20" name="03SmartFontUI"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="15" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -117,12 +127,12 @@ meOCi+OCouODl+ODquOBp+OBmeOAgg
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LkM-Yl-WJ5" customClass="PGTransformLabel" customModule="PGEZTransition">
-                                <rect key="frame" x="56.666666666666657" y="363" width="262" height="86.333333333333314"/>
+                                <rect key="frame" x="40.666666666666657" y="357.33333333333331" width="294" height="97.666666666666686"/>
                                 <attributedString key="attributedText">
                                     <fragment content="これより">
                                         <attributes>
                                             <color key="NSColor" red="0.29019607843137252" green="0.33333333333333331" blue="0.42352941176470588" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="20" name=".HiraKakuInterface-W3"/>
+                                            <font key="NSFont" size="21" name="03SmartFontUI"/>
                                             <font key="NSOriginalFont" metaFont="system" size="17"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="clipping" baseWritingDirection="natural" lineSpacing="15" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -133,14 +143,14 @@ DQ
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.29019607843137252" green="0.33333333333333331" blue="0.42352941176470588" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <font key="NSFont" size="21" name="03SmartFontUI"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="clipping" baseWritingDirection="natural" lineSpacing="15" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="あなたの人生に残された時間の">
                                         <attributes>
                                             <color key="NSColor" red="0.29019607843137252" green="0.33333333333333331" blue="0.42352941176470588" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="20" name=".HiraKakuInterface-W3"/>
+                                            <font key="NSFont" size="21" name="03SmartFontUI"/>
                                             <font key="NSOriginalFont" metaFont="system" size="17"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="clipping" baseWritingDirection="natural" lineSpacing="15" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -151,14 +161,14 @@ DQ
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.29019607843137252" green="0.33333333333333331" blue="0.42352941176470588" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <font key="NSFont" size="21" name="03SmartFontUI"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="clipping" baseWritingDirection="natural" lineSpacing="15" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="計測を開始します。">
                                         <attributes>
                                             <color key="NSColor" red="0.29019607843137252" green="0.33333333333333331" blue="0.42352941176470588" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="20" name=".HiraKakuInterface-W3"/>
+                                            <font key="NSFont" size="21" name="03SmartFontUI"/>
                                             <font key="NSOriginalFont" metaFont="system" size="17"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="clipping" baseWritingDirection="natural" lineSpacing="15" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -202,17 +212,17 @@ DQ
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="Gjw-8y-YjG">
-                                <rect key="frame" x="43" y="293.33333333333331" width="289" height="225.66666666666669"/>
+                                <rect key="frame" x="43" y="288.66666666666669" width="289" height="234.66666666666669"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGI-N9-ogN" customClass="PGTransformLabel" customModule="PGEZTransition">
-                                        <rect key="frame" x="0.0" y="0.0" width="289" height="52.666666666666664"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="289" height="61.666666666666664"/>
                                         <attributedString key="attributedText">
                                             <fragment>
                                                 <string key="content">Q1.
 あなたの性別を教えて下さい。</string>
                                                 <attributes>
                                                     <color key="NSColor" red="0.29019607843137252" green="0.33333333333333331" blue="0.42352941176470588" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <font key="NSFont" size="20" name=".HiraKakuInterface-W3"/>
+                                                    <font key="NSFont" size="20" name="03SmartFontUI"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="clipping" baseWritingDirection="natural" lineSpacing="15" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -221,7 +231,7 @@ DQ
                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="61" translatesAutoresizingMaskIntoConstraints="NO" id="Xdk-ZU-PYn">
-                                        <rect key="frame" x="0.0" y="105.66666666666669" width="289" height="120"/>
+                                        <rect key="frame" x="0.0" y="114.66666666666663" width="289" height="120"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18y-3g-IEI">
                                                 <rect key="frame" x="0.0" y="0.0" width="114" height="120"/>
@@ -307,7 +317,7 @@ DQ
 教えて下さい。</string>
                                         <attributes>
                                             <color key="NSColor" red="0.29019607843137252" green="0.33333333333333331" blue="0.42352941176470588" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="20" name=".HiraKakuInterface-W3"/>
+                                            <font key="NSFont" size="20" name="03SmartFontUI"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="clipping" baseWritingDirection="natural" lineSpacing="15" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -351,7 +361,7 @@ DQ
 あなたの年齢を教えて下さい。</string>
                                         <attributes>
                                             <color key="NSColor" red="0.29019607843137252" green="0.33333333333333331" blue="0.42352941176470588" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="20" name=".HiraKakuInterface-W3"/>
+                                            <font key="NSFont" size="20" name="03SmartFontUI"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="clipping" baseWritingDirection="natural" lineSpacing="15" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -422,11 +432,19 @@ DQ
                                     <constraint firstAttribute="width" secondItem="7jF-3X-0J7" secondAttribute="height" multiplier="1:1" id="neI-Ka-21O"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ks2-Sp-Tvt">
-                                <rect key="frame" x="187.66666666666666" y="296" width="0.0" height="0.0"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="70.00%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ks2-Sp-Tvt" customClass="ProgressLabel" customModule="Limit" customModuleProvider="target">
+                                <rect key="frame" x="116.33333333333333" y="264.66666666666669" width="142.66666666666669" height="62.666666666666686"/>
                                 <fontDescription key="fontDescription" name="BigJohnPRO-Regular" family="Big John PRO" pointSize="52"/>
                                 <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="kernSpacing">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="DecimalFontSize">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="Qc1-hC-yFK">
                                 <rect key="frame" x="65" y="463.66666666666669" width="245" height="133.66666666666669"/>
@@ -562,7 +580,7 @@ DQ
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="245" id="Qvi-Fu-MP6"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVI-aF-uJb" customClass="CustomHighlightButton" customModule="Limit" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BVI-aF-uJb" customClass="CustomHighlightButton" customModule="Limit" customModuleProvider="target">
                                 <rect key="frame" x="62.666666666666657" y="627.33333333333337" width="249.99999999999997" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <accessibility key="accessibilityConfiguration">
@@ -572,10 +590,16 @@ DQ
                                     <constraint firstAttribute="height" constant="50" id="TwL-3C-o6n"/>
                                     <constraint firstAttribute="width" constant="250" id="qlH-ZH-Xho"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                 <inset key="titleEdgeInsets" minX="12" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Twitterでシェアする" image="twitter">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="twitter">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Twitterでシェアする">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="03SmartFontUI"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
@@ -655,77 +679,108 @@ DQ
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0hy-PW-IAi">
                                 <rect key="frame" x="37.666666666666657" y="256" width="300" height="300"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jsb-cy-unj">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jsb-cy-unj">
                                         <rect key="frame" x="0.0" y="235" width="300" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="U5q-8Z-AUk"/>
                                         </constraints>
-                                        <state key="normal" title="キャンセル">
-                                            <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="キャンセル">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="15" name="03SmartFontUI"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
                                         </state>
                                         <connections>
                                             <action selector="cancel:" destination="XfB-Id-v4b" eventType="touchUpInside" id="GUE-f3-J3n"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9s-xs-PgV" customClass="CustomHighlightButton" customModule="Limit" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q9s-xs-PgV" customClass="CustomHighlightButton" customModule="Limit" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="75" width="300" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="WO6-4T-JjL"/>
                                             <constraint firstAttribute="width" constant="300" id="d2N-YR-C2b"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="アプリを友達にシェアする" image="share">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <state key="normal" image="share">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="アプリを友達にシェアする">
+                                                    <attributes>
+                                                        <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <font key="NSFont" size="15" name="03SmartFontUI"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
                                         </state>
                                         <connections>
                                             <action selector="share:" destination="XfB-Id-v4b" eventType="touchUpInside" id="kLQ-Ea-BPa"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h91-KV-G97" customClass="CustomHighlightButton" customModule="Limit" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h91-KV-G97" customClass="CustomHighlightButton" customModule="Limit" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="125" width="300" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="300" id="Okw-ej-E4W"/>
                                             <constraint firstAttribute="height" constant="50" id="rjr-TU-WmJ"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="レビューを書いて応援する" image="star">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <state key="normal" image="star">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="レビューを書いて応援する">
+                                                    <attributes>
+                                                        <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <font key="NSFont" size="15" name="03SmartFontUI"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
                                         </state>
                                         <connections>
                                             <action selector="review:" destination="XfB-Id-v4b" eventType="touchUpInside" id="NaW-Kb-dTr"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDP-Gf-sYR" customClass="CustomHighlightButton" customModule="Limit" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tDP-Gf-sYR" customClass="CustomHighlightButton" customModule="Limit" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="25" width="300" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="300" id="fwD-w1-JIU"/>
                                             <constraint firstAttribute="height" constant="50" id="uRx-Hm-3nS"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="再診断する" image="reset">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <state key="normal" image="reset">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="再診断する">
+                                                    <attributes>
+                                                        <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <font key="NSFont" size="17" name="03SmartFontUI"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
                                         </state>
                                         <connections>
                                             <action selector="reset:" destination="XfB-Id-v4b" eventType="touchUpInside" id="PcJ-Gw-Cbx"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRK-4B-apb" customClass="CustomHighlightButton" customModule="Limit" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hRK-4B-apb" customClass="CustomHighlightButton" customModule="Limit" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="175" width="300" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="61V-qZ-NG7"/>
                                             <constraint firstAttribute="width" constant="300" id="zIL-gC-0Be"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="お問い合わせ" image="contact">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <state key="normal" image="contact">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="お問い合わせ">
+                                                    <attributes>
+                                                        <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <font key="NSFont" size="15" name="03SmartFontUI"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
                                         </state>
                                         <connections>
                                             <segue destination="Wbe-wb-2mc" kind="presentation" id="UIK-u1-uOl"/>
@@ -809,12 +864,12 @@ DQ
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCa-yp-V1Q" customClass="PGTransformLabel" customModule="PGEZTransition">
-                                <rect key="frame" x="87.333333333333329" y="396.66666666666669" width="200.66666666666669" height="19"/>
+                                <rect key="frame" x="79.666666666666686" y="395.33333333333331" width="216" height="21.666666666666686"/>
                                 <attributedString key="attributedText">
                                     <fragment content="余命を計算しています...">
                                         <attributes>
                                             <color key="NSColor" red="0.29019607843137252" green="0.33333333333333331" blue="0.42352941176470588" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="20" name=".HiraKakuInterface-W3"/>
+                                            <font key="NSFont" size="20" name="03SmartFontUI"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="clipping" baseWritingDirection="natural" lineSpacing="15" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -847,15 +902,15 @@ DQ
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="iek-78-Rpy">
-                                <rect key="frame" x="56.666666666666657" y="335.33333333333331" width="262" height="141.33333333333331"/>
+                                <rect key="frame" x="47.666666666666657" y="330" width="280" height="152"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYW-DK-fpm" customClass="PGTransformLabel" customModule="PGEZTransition">
-                                        <rect key="frame" x="0.0" y="0.0" width="262" height="19"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="21.666666666666668"/>
                                         <attributedString key="attributedText">
                                             <fragment content="計測が完了しました。">
                                                 <attributes>
                                                     <color key="NSColor" red="0.29019607843137252" green="0.33333333333333331" blue="0.42352941176470588" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <font key="NSFont" size="20" name=".HiraKakuInterface-W3"/>
+                                                    <font key="NSFont" size="20" name="03SmartFontUI"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="clipping" baseWritingDirection="natural" lineSpacing="15" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -864,7 +919,7 @@ DQ
                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAl-1J-jH4" customClass="PGTransformLabel" customModule="PGEZTransition">
-                                        <rect key="frame" x="0.0" y="54.999999999999993" width="262" height="86.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="57.666666666666679" width="280" height="94.333333333333314"/>
                                         <attributedString key="attributedText">
                                             <fragment>
                                                 <string key="content" base64-UTF8="YES">
@@ -873,7 +928,7 @@ g5/jg4Pjg4gN44KS6ZaL5aeL44GX44G+44GZ44CCA
 </string>
                                                 <attributes>
                                                     <color key="NSColor" red="0.29019607843137252" green="0.33333333333333331" blue="0.42352941176470588" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <font key="NSFont" size="20" name=".HiraKakuInterface-W3"/>
+                                                    <font key="NSFont" size="20" name="03SmartFontUI"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="clipping" baseWritingDirection="natural" lineSpacing="15" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -884,7 +939,7 @@ g5/jg4Pjg4gN44KS6ZaL5aeL44GX44G+44GZ44CCA
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CbX-vh-pmp">
-                                <rect key="frame" x="102.66666666666669" y="536.66666666666663" width="170" height="40"/>
+                                <rect key="frame" x="102.66666666666669" y="542" width="170" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="170" id="F8c-wP-HKd"/>
                                     <constraint firstAttribute="height" constant="40" id="eko-4o-V9j"/>

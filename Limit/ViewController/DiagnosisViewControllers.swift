@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SharedLifeSpan
 
 class FirstVC: CustomIntroViewController {
     override func viewDidLoad() {
