@@ -19,7 +19,10 @@ class CustomNavigationController: UINavigationController {
         //NavigationBaritemのitem色を白へ
         navigationBar.tintColor = UIColor.white
         //文字色を白に
-        navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        navigationBar.titleTextAttributes = [
+            .foregroundColor: UIColor.white,
+            .font: UIFont(name: "03SmartFontUI", size: 20.0) ?? UIFont.systemFontSize
+        ]
         
         
         

@@ -11,9 +11,13 @@ import WaveAnimationView
 
 extension UIViewController {
     
-    public func setupGradientLayer(colors:[CGColor], frame: CGRect) -> CAGradientLayer {
+    public func setupGradientLayer(colorThemeType: ColorTheme, size: CGSize) -> CAGradientLayer {
+        let colors = [
+            UIColor(hexcode: colorThemeType.hexCodeSet.0, alpha: 1).cgColor,
+            UIColor(hexcode: colorThemeType.hexCodeSet.1, alpha: 1).cgColor
+        ]
         let layer = CAGradientLayer()
-        layer.frame = frame
+        layer.frame = CGRect(x: 0, y: 0, width: size.width, height: size.height)
         layer.colors = colors
         layer.startPoint = CGPoint(x: 0, y: 1)
         layer.endPoint = CGPoint(x: 1, y: 0)

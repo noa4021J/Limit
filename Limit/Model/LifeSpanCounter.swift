@@ -8,7 +8,7 @@
 
 import Foundation
 
-class LifeSpanCounter {
+public class LifeSpanCounter {
     
     private var userInfo: UserInfo!
     
@@ -16,15 +16,15 @@ class LifeSpanCounter {
     private var daysToDead: Calendar!
     private var totalDays: Calendar!
     
-    init() {
+    public init() {
         
         userInfo = UserInfoDataSouce.shared.getUserInfo()
-
+        
         setLimitDate()
         
     }
     
-    func setLimitDate() {
+    public func setLimitDate() {
         
         let age = userInfo.age
         let birthday = userInfo.birthday
@@ -44,7 +44,7 @@ class LifeSpanCounter {
 
     }
     
-    func timeUpdater(update: ([String:Any])->Void) {
+    public func timeUpdater(update: ([String:Any])->Void) {
         
         let nowDate = Date()
         let calendar = Calendar.current
@@ -61,8 +61,8 @@ class LifeSpanCounter {
         let minute = calendar.component(.minute, from: nowDate)
         let second = calendar.component(.second, from: nowDate)
         
-        let limitHour = 24 - hour
-        let limitMinute = 60 - minute
+        let limitHour = 23 - hour
+        let limitMinute = 59 - minute
         let limitSecond = 60 - second
         
         let newValues:[String:Any] = [

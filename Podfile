@@ -1,4 +1,5 @@
 # Uncomment the next line to define a global platform for your project
+
 # platform :ios, '8.0'
 
 target 'Limit' do
@@ -6,7 +7,11 @@ target 'Limit' do
   use_frameworks!
 
   # Pods for Limit
-  pod "WaveAnimationView"
+  pod 'WaveAnimationView'
+  pod 'SVProgressHUD'
+  pod 'Firebase/Core'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Functions'
 
 end
 
