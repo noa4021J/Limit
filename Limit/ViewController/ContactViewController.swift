@@ -33,7 +33,7 @@ class ContactViewController: UITableViewController, UITextViewDelegate {
         layer.cornerRadius = submitButton.bounds.midY
         submitButton.layer.insertSublayer(layer, at: 0)
         
-        submitButton.layer.shadowColor = UIColor(hexcode: ColorThemeSource.currentTheme.hexCodeSet.0, alpha: 1).cgColor
+        submitButton.layer.shadowColor = UIColor(hexcode: ColorTheme.NearMoon.hexCodeSet.0, alpha: 1).cgColor
         submitButton.layer.shadowRadius = 6
         submitButton.layer.shadowOffset = CGSize(width: 0, height: 7)
         submitButton.layer.shadowOpacity = 0.8
